@@ -18,5 +18,5 @@ chown mongodb:mongodb /etc/ssl/mongo.pem
 
 
 #### parse user crontab #####
-# Restart pm2 with your parse user NOT root
+# Restart pm2 with your parse user NOT root # make sure log folder exists
 12 2 * * 2 /usr/bin/pm2 /sbin/restart 0 >> ~/logs/pm2/pm2-cron.log 2>&1
